@@ -19,4 +19,7 @@ const drink = age >= 18 ? `Wine` : `Water`;
 //This whole operator here is now an expression. And an expression produce a value.
 console.log(drink);
 
-//When we want to declare a variable
+//When we want to declare a variable  
+
+
+
