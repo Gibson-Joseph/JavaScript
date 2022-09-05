@@ -2,7 +2,7 @@
 
 // the conditional operator allows us to write something similar to an if/else statement but all in one line.
 
-const age = 19;
+const age = 18;
 age >= 18
   ? console.log(`I Like to drink Wine`)
   : console.log(`I Like to drink Water`);
@@ -14,12 +14,33 @@ age >= 18
 
 //The operator always produces a value.So in other words an operator is an expression.
 
+/////////////////////////////////////////
+
 //ternary operator really useful to basically conditionally declare variables.
 const drink = age >= 18 ? `Wine` : `Water`;
 //This whole operator here is now an expression. And an expression produce a value.
 console.log(drink);
 
-//When we want to declare a variable  
+//when we want to declare a variable inside of an if or an else blog, we need to first declare that variable outside.
 
+/////////////////////////////////////////
 
+// example of if/else:
+let drink2; //declare variable
+if (age >= 18) {
+  drink2 = `Wine`; //Reassign
+} else {
+  //<-- //we need to define a "drink2" variable outside of the if and the else blogs,because any variable that we define inside of a blog, is not available outside.So we declared a variable here and then reassign it inside of the blogs.
+  drink2 = `Water`;
+}
+console.log(drink2); 
 
+/////////////////////////////////////////
+
+console.log(`I like to drink ${age >= 18 ? `Wine` : `Water`}`);
+
+//Template literal will now use whatever result we get from this operater.
+
+//we can then put the value here in this placeholder in the template literal.
+
+/////////////////////////////////////////
